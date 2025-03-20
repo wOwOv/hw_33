@@ -34,20 +34,25 @@ int main()
 
 	//생성할 파일 이름 뜯어오기
 	char* ptr = buffer;
+	char filename[128];//헤더 define 이름
 	char filename1[128];//헤더이름
 	char filename2[128];//소스파일 이름
 	int cnt = 0;
 	while (1)
 	{
+		filename[cnt] = *ptr;
 		filename1[cnt] = *ptr;
 		filename2[cnt] = *ptr;
 		cnt++;
 		ptr++;
 		if (*ptr == 0x0d)
 		{
+			filename[cnt] = '\0';
+
 			filename1[cnt] = '.';
 			filename1[cnt + 1] = 'h';
 			filename1[cnt + 2] = '\0';
+			
 			filename2[cnt] = '.';
 			filename2[cnt + 1] = 'c';
 			filename2[cnt + 2] = 'p';
@@ -106,7 +111,7 @@ int main()
 	}
 
 	FILE* headerfile = fopen(filename1, "wb");
-	fprintf(headerfile, "#ifndef __%s__\n#define __%s__\n\nstruct Player;\n\n", filename1, filename1);
+	fprintf(headerfile, "#ifndef __%s__\n#define __%s__\n\nstruct Player;\n\n", filename, filename);
 	for (int i = 0; i < cnt1; i++)
 	{
 		fprintf(headerfile, "void %s\n", func[i]);

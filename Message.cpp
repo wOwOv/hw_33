@@ -51,6 +51,18 @@ buf<<id;
 SendBroadcast(player,&buf);
 }
 
+void UProcMoveStart(Player* player,unsigned int id, unsigned char dir, unsigned short x, unsigned short y)
+{
+SBuffer buf;
+unsigned char code=0x89;
+unsigned char size=9;
+unsigned char type=11;
+buf<<code<<size<<type;
+buf<<id<<dir<<x<<y;
+
+SendUnicast(player,&buf);
+}
+
 void ProcMoveStart(Player* player,unsigned int id, unsigned char dir, unsigned short x, unsigned short y)
 {
 SBuffer buf;
