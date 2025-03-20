@@ -3,8 +3,9 @@
 
 struct Player;
 
-void ProcCreateMe(Player* player,unsigned int id,unsigned char dir,unsigned short x,unsigned short y,unsigned char hp);
-void ProcCreateOther(Player* player,unsigned int id, unsigned char dir, unsigned short x, unsigned short y, unsigned char hp);
+void UProcCreateMe(Player* player,unsigned int id,unsigned char dir,unsigned short x,unsigned short y,unsigned char hp);
+void UProcCreateOther(Player* player,unsigned int id, unsigned char dir, unsigned short x, unsigned short y, unsigned char hp);
+void UProcCreateOther(Player* player,unsigned int id, unsigned char dir, unsigned short x, unsigned short y, unsigned char hp);
 void ProcDelete(Player* player,unsigned int id);
 void ProcMoveStart(Player* player,unsigned int id, unsigned char dir, unsigned short x, unsigned short y);
 void ProcMoveStop(Player* player,unsigned int id, unsigned char dir, unsigned short x, unsigned short y);

@@ -57,14 +57,16 @@ int main()
 			break;
 		}
 	}
-	//ptr현재 첫 함수 이름시작부분에 있음
-
+	//ptr현재 첫 함수 sendtype부분에 있음
+	char sendtype[30];
 	char func[30][256];
 	char type[30][4];
 	int cnt1 = 0;
 	int cnt2 = 0;
 	while (1)
 	{
+		sendtype[cnt1] = *ptr;
+		ptr += 2;
 		//한 줄씩 문자열 뜯어오고 header type도 뜯어오기
 		while (1)
 		{
@@ -292,8 +294,27 @@ int main()
 			}
 			fprintf(srcfile, ";\n\n");
 
-			fprintf(srcfile, "SendBroadcast(%s,&buf);\n}\n\n", parameter[0]);
-
+			switch (sendtype[i])
+			{
+			case '0':
+			{
+				fprintf(srcfile, "SendBroadcast(nullptr,&buf);\n}\n\n");
+				break;
+			}
+			case '1':
+			{
+				fprintf(srcfile, "SendUnicast(%s,&buf);\n}\n\n",parameter[0]);
+				break;
+			}
+			case '2':
+			{
+				fprintf(srcfile, "SendBroadcast(%s,&buf);\n}\n\n", parameter[0]);
+			}
+			default:
+			{
+				break;
+			}
+			}
 
 	}
 
