@@ -2,7 +2,7 @@ Message
 {
 1 UProcCreateMe(Player* player,unsigned int id,unsigned char dir,unsigned short x,unsigned short y,unsigned char hp) 0
 1 UProcCreateOther(Player* player,unsigned int id, unsigned char dir, unsigned short x, unsigned short y, unsigned char hp) 1
-2 UProcCreateOther(Player* player,unsigned int id, unsigned char dir, unsigned short x, unsigned short y, unsigned char hp) 1
+2 ProcCreateOther(Player* player,unsigned int id, unsigned char dir, unsigned short x, unsigned short y, unsigned char hp) 1
 2 ProcDelete(Player* player,unsigned int id) 2
 2 ProcMoveStart(Player* player,unsigned int id, unsigned char dir, unsigned short x, unsigned short y) 11
 2 ProcMoveStop(Player* player,unsigned int id, unsigned char dir, unsigned short x, unsigned short y) 13

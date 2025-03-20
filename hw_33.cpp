@@ -125,7 +125,8 @@ int main()
 	//소스파일생성
 	FILE* srcfile = fopen(filename2, "wb");
 	fprintf(srcfile, "#include \"%s\"\n", filename1);
-	fprintf(srcfile, "#include \"SerialBuffer.h\"\n\n");
+	fprintf(srcfile, "#include \"SerialBuffer.h\"\n");
+	fprintf(srcfile, "#include \"SendCast.h\"\n\n\n");
 	for (int i = 0; i < cnt1; i++)
 	{
 		int packetsize = 0;

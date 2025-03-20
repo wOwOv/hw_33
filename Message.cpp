@@ -1,5 +1,7 @@
 #include "Message.h"
 #include "SerialBuffer.h"
+#include "SendCast.h"
+
 
 void UProcCreateMe(Player* player,unsigned int id,unsigned char dir,unsigned short x,unsigned short y,unsigned char hp)
 {
@@ -25,7 +27,7 @@ buf<<id<<dir<<x<<y<<hp;
 SendUnicast(player,&buf);
 }
 
-void UProcCreateOther(Player* player,unsigned int id, unsigned char dir, unsigned short x, unsigned short y, unsigned char hp)
+void ProcCreateOther(Player* player,unsigned int id, unsigned char dir, unsigned short x, unsigned short y, unsigned char hp)
 {
 SBuffer buf;
 unsigned char code=0x89;
