@@ -6,3 +6,4 @@ hw_33_1
 ㄴbroadcast인지 unicast인지 확인 필요..해당 코드 넣기...
 ㄴ끝이나 맨앞에 숫자 넣어서 그걸로 구분해야할 듯..
   ㄴ수정했음..
+ㄴ격투겜 서버 프로젝트에서 sendbroadcast,sendunicast 소스파일 분리해서 그 헤더파일 include까지 하도록..해뒀음
