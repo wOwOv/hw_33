@@ -1,12 +1,14 @@
 Message
 {
-ProcCreateMe(Player* player,unsigned int id,unsigned char dir,unsigned short x,unsigned short y,unsigned char hp) 0
-ProcCreateOther(Player* player,unsigned int id, unsigned char dir, unsigned short x, unsigned short y, unsigned char hp) 1
-ProcDelete(Player* player,unsigned int id) 2
-ProcMoveStart(Player* player,unsigned int id, unsigned char dir, unsigned short x, unsigned short y) 11
-ProcMoveStop(Player* player,unsigned int id, unsigned char dir, unsigned short x, unsigned short y) 13
-ProcAttack1(Player* player,unsigned int id, unsigned char dir, unsigned short x, unsigned short y) 21
-ProcAttack2(Player* player,unsigned int id, unsigned char dir, unsigned short x, unsigned short y) 23
-ProcAttack3(Player* player,unsigned int id, unsigned char dir, unsigned short x, unsigned short y) 25
-ProcDamage(Player* player,unsigned int atk,unsigned int tgt,unsigned char hp) 30
+ProcCreateMe(unsigned int id,unsigned char dir,unsigned short x,unsigned short y,unsigned char hp); 0
+ProcCreateOther(unsigned int id, unsigned char dir, unsigned short x, unsigned short y, unsigned char hp); 1
+ProcCreateOther(unsigned int id, unsigned char dir, unsigned short x, unsigned short y, unsigned char hp); 1
+ProcDelete(unsigned int id); 2
+ProcMoveStart(unsigned int id, unsigned char dir, unsigned short x, unsigned short y); 11
+ProcMoveStart(unsigned int id, unsigned char dir, unsigned short x, unsigned short y); 11
+ProcMoveStop(unsigned int id, unsigned char dir, unsigned short x, unsigned short y); 13
+ProcAttack1(unsigned int id, unsigned char dir, unsigned short x, unsigned short y); 21
+ProcAttack2(unsigned int id, unsigned char dir, unsigned short x, unsigned short y); 23
+ProcAttack3(unsigned int id, unsigned char dir, unsigned short x, unsigned short y); 25
+ProcDamage(unsigned int atk,unsigned int tgt,unsigned char hp); 30
 }
