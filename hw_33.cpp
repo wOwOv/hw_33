@@ -426,7 +426,7 @@ int main()
 		fprintf(stubheader, "}\n");
 	}
 	fprintf(stubheader, "default:\n{\nbreak;\n}\n");
-	fprintf(stubheader, "}\n\n");
+	fprintf(stubheader, "}\n}\n\n");
 	fclose(stubcpp);
 }
 
