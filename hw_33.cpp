@@ -393,7 +393,12 @@ int main()
 	fprintf(stubheader, "#ifndef __%s__\n#define __%s__\n\nstruct Player;\nstruct SBuffer;\n\n", definename[1], definename[1]);
 	for (int i = 0; i < cnt1; i++)
 	{
-		fprintf(stubheader, "#define %s %s\n", def[i], type[i]);
+		//type[i]에서 숫자 1빼서 넣어주기
+		int num = atoi(type[i]);
+		num--;
+		char stubtype[8];
+		_itoa_s(num, stubtype, sizeof(stubtype), 10);
+		fprintf(stubheader, "#define %s %s\n", def[i], stubtype);
 	}
 	fprintf(stubheader,"\n\n");
 	for (int i = 0; i < cnt1; i++)
