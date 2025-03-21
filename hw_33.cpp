@@ -10,16 +10,17 @@ void to_upper(char* p);
 
 int main()
 {
+	
 	printf("Text file name: ");
 	char name[128];
 	scanf_s("%s", name, 128);
-
+	
 
 
 	//////////////////////헤더파일 작성
 
 	//텍스트 파일 fopen
-		FILE* file = fopen(name, "rb");
+	FILE* file = fopen(name, "rb");
 	if (file == NULL)
 	{
 		printf("fopen error \n");

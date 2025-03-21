@@ -6,9 +6,7 @@ struct SBuffer;
 
 #define DEFPROCCREATEME 0
 #define DEFPROCCREATEOTHER 1
-#define DEFPROCCREATEOTHER 1
 #define DEFPROCDELETE 2
-#define DEFPROCMOVESTART 11
 #define DEFPROCMOVESTART 11
 #define DEFPROCMOVESTOP 13
 #define DEFPROCATTACK1 21
@@ -19,9 +17,7 @@ struct SBuffer;
 
 void ReqProcCreateMe(Player* player,SBuffer* buf);
 void ReqProcCreateOther(Player* player,SBuffer* buf);
-void ReqProcCreateOther(Player* player,SBuffer* buf);
 void ReqProcDelete(Player* player,SBuffer* buf);
-void ReqProcMoveStart(Player* player,SBuffer* buf);
 void ReqProcMoveStart(Player* player,SBuffer* buf);
 void ReqProcMoveStop(Player* player,SBuffer* buf);
 void ReqProcAttack1(Player* player,SBuffer* buf);

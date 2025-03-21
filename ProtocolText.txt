@@ -2,9 +2,7 @@ Message
 {
 ProcCreateMe(unsigned int id,unsigned char dir,unsigned short x,unsigned short y,unsigned char hp); 0
 ProcCreateOther(unsigned int id, unsigned char dir, unsigned short x, unsigned short y, unsigned char hp); 1
-ProcCreateOther(unsigned int id, unsigned char dir, unsigned short x, unsigned short y, unsigned char hp); 1
 ProcDelete(unsigned int id); 2
-ProcMoveStart(unsigned int id, unsigned char dir, unsigned short x, unsigned short y); 11
 ProcMoveStart(unsigned int id, unsigned char dir, unsigned short x, unsigned short y); 11
 ProcMoveStop(unsigned int id, unsigned char dir, unsigned short x, unsigned short y); 13
 ProcAttack1(unsigned int id, unsigned char dir, unsigned short x, unsigned short y); 21

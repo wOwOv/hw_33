@@ -20,19 +20,9 @@ case DEFPROCCREATEOTHER:
 ReqProcCreateOther(player,buf);
 break;
 }
-case DEFPROCCREATEOTHER:
-{
-ReqProcCreateOther(player,buf);
-break;
-}
 case DEFPROCDELETE:
 {
 ReqProcDelete(player,buf);
-break;
-}
-case DEFPROCMOVESTART:
-{
-ReqProcMoveStart(player,buf);
 break;
 }
 case DEFPROCMOVESTART:

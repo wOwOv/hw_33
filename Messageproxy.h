@@ -9,15 +9,9 @@ void BProcCreateMe(Player* player,unsigned int id,unsigned char dir,unsigned sho
 void UProcCreateOther(Player* player,unsigned int id, unsigned char dir, unsigned short x, unsigned short y, unsigned char hp);
 void RBProcCreateOther(unsigned int id, unsigned char dir, unsigned short x, unsigned short y, unsigned char hp);
 void BProcCreateOther(Player* player,unsigned int id, unsigned char dir, unsigned short x, unsigned short y, unsigned char hp);
-void UProcCreateOther(Player* player,unsigned int id, unsigned char dir, unsigned short x, unsigned short y, unsigned char hp);
-void RBProcCreateOther(unsigned int id, unsigned char dir, unsigned short x, unsigned short y, unsigned char hp);
-void BProcCreateOther(Player* player,unsigned int id, unsigned char dir, unsigned short x, unsigned short y, unsigned char hp);
 void UProcDelete(Player* player,unsigned int id);
 void RBProcDelete(unsigned int id);
 void BProcDelete(Player* player,unsigned int id);
-void UProcMoveStart(Player* player,unsigned int id, unsigned char dir, unsigned short x, unsigned short y);
-void RBProcMoveStart(unsigned int id, unsigned char dir, unsigned short x, unsigned short y);
-void BProcMoveStart(Player* player,unsigned int id, unsigned char dir, unsigned short x, unsigned short y);
 void UProcMoveStart(Player* player,unsigned int id, unsigned char dir, unsigned short x, unsigned short y);
 void RBProcMoveStart(unsigned int id, unsigned char dir, unsigned short x, unsigned short y);
 void BProcMoveStart(Player* player,unsigned int id, unsigned char dir, unsigned short x, unsigned short y);

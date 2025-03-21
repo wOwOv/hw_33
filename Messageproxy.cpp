@@ -75,42 +75,6 @@ buf<<id<<dir<<x<<y<<hp;
 SendBroadcast(player,&buf);
 }
 
-void UProcCreateOther(Player* player,unsigned int id, unsigned char dir, unsigned short x, unsigned short y, unsigned char hp)
-{
-SBuffer buf;
-unsigned char code=0x89;
-unsigned char size=10;
-unsigned char type=1;
-buf<<code<<size<<type;
-buf<<id<<dir<<x<<y<<hp;
-
-SendUnicast(player,&buf);
-}
-
-void RBProcCreateOther(unsigned int id, unsigned char dir, unsigned short x, unsigned short y, unsigned char hp)
-{
-SBuffer buf;
-unsigned char code=0x89;
-unsigned char size=10;
-unsigned char type=1;
-buf<<code<<size<<type;
-buf<<id<<dir<<x<<y<<hp;
-
-SendBroadcast(nullptr,&buf);
-}
-
-void BProcCreateOther(Player* player,unsigned int id, unsigned char dir, unsigned short x, unsigned short y, unsigned char hp)
-{
-SBuffer buf;
-unsigned char code=0x89;
-unsigned char size=10;
-unsigned char type=1;
-buf<<code<<size<<type;
-buf<<id<<dir<<x<<y<<hp;
-
-SendBroadcast(player,&buf);
-}
-
 void UProcDelete(Player* player,unsigned int id)
 {
 SBuffer buf;
@@ -143,42 +107,6 @@ unsigned char size=4;
 unsigned char type=2;
 buf<<code<<size<<type;
 buf<<id;
-
-SendBroadcast(player,&buf);
-}
-
-void UProcMoveStart(Player* player,unsigned int id, unsigned char dir, unsigned short x, unsigned short y)
-{
-SBuffer buf;
-unsigned char code=0x89;
-unsigned char size=9;
-unsigned char type=11;
-buf<<code<<size<<type;
-buf<<id<<dir<<x<<y;
-
-SendUnicast(player,&buf);
-}
-
-void RBProcMoveStart(unsigned int id, unsigned char dir, unsigned short x, unsigned short y)
-{
-SBuffer buf;
-unsigned char code=0x89;
-unsigned char size=9;
-unsigned char type=11;
-buf<<code<<size<<type;
-buf<<id<<dir<<x<<y;
-
-SendBroadcast(nullptr,&buf);
-}
-
-void BProcMoveStart(Player* player,unsigned int id, unsigned char dir, unsigned short x, unsigned short y)
-{
-SBuffer buf;
-unsigned char code=0x89;
-unsigned char size=9;
-unsigned char type=11;
-buf<<code<<size<<type;
-buf<<id<<dir<<x<<y;
 
 SendBroadcast(player,&buf);
 }
