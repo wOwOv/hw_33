@@ -475,7 +475,7 @@ int main()
 			fprintf(stubheader, "case %s:\n{\n", def[i]);
 			for (int f = 1; f < paramnum[i]; f++)
 			{
-				fprintf(stubheader, "%s;\n", param[i][f]);
+				fprintf(stubheader, "%s=0;\n", param[i][f]);
 			}
 			fprintf(stubheader, "*buf");
 			for (int e = 1; e < paramnum[i]; e++)
