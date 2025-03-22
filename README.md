@@ -10,3 +10,6 @@ hw_33_1
 
 hw_33_2
 ㄴ함수 하나 넣으면 broadcast unicast 해당인자제외broadcast 3개가 한꺼번에 만들어지도록
+
+hw_33_3
+ㄴReqProc함수들에 unsigned id빼고 인자 들어가도록
