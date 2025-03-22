@@ -22,7 +22,7 @@ unsigned char code=0x89;
 unsigned char size=10;
 unsigned char type=0;
 buf<<code<<size<<type;
-buf<<<<<<<<<<;
+buf<<id<<dir<<x<<y<<hp;
 
 SendBroadcast(nullptr,&buf);
 }
@@ -34,7 +34,7 @@ unsigned char code=0x89;
 unsigned char size=10;
 unsigned char type=0;
 buf<<code<<size<<type;
-buf<<<<<<<<<<;
+buf<<id<<dir<<x<<y<<hp;
 
 SendBroadcast(player,&buf);
 }
@@ -58,7 +58,7 @@ unsigned char code=0x89;
 unsigned char size=10;
 unsigned char type=1;
 buf<<code<<size<<type;
-buf<<<<<<<<<<;
+buf<<id<<dir<<x<<y<<hp;
 
 SendBroadcast(nullptr,&buf);
 }
@@ -70,7 +70,7 @@ unsigned char code=0x89;
 unsigned char size=10;
 unsigned char type=1;
 buf<<code<<size<<type;
-buf<<<<<<<<<<;
+buf<<id<<dir<<x<<y<<hp;
 
 SendBroadcast(player,&buf);
 }
@@ -94,7 +94,7 @@ unsigned char code=0x89;
 unsigned char size=4;
 unsigned char type=2;
 buf<<code<<size<<type;
-buf<<;
+buf<<id;
 
 SendBroadcast(nullptr,&buf);
 }
@@ -106,7 +106,7 @@ unsigned char code=0x89;
 unsigned char size=4;
 unsigned char type=2;
 buf<<code<<size<<type;
-buf<<;
+buf<<id;
 
 SendBroadcast(player,&buf);
 }
@@ -130,7 +130,7 @@ unsigned char code=0x89;
 unsigned char size=9;
 unsigned char type=11;
 buf<<code<<size<<type;
-buf<<<<<<<<;
+buf<<id<<dir<<x<<y;
 
 SendBroadcast(nullptr,&buf);
 }
@@ -142,7 +142,7 @@ unsigned char code=0x89;
 unsigned char size=9;
 unsigned char type=11;
 buf<<code<<size<<type;
-buf<<<<<<<<;
+buf<<id<<dir<<x<<y;
 
 SendBroadcast(player,&buf);
 }
@@ -166,7 +166,7 @@ unsigned char code=0x89;
 unsigned char size=9;
 unsigned char type=13;
 buf<<code<<size<<type;
-buf<<<<<<<<;
+buf<<id<<dir<<x<<y;
 
 SendBroadcast(nullptr,&buf);
 }
@@ -178,7 +178,7 @@ unsigned char code=0x89;
 unsigned char size=9;
 unsigned char type=13;
 buf<<code<<size<<type;
-buf<<<<<<<<;
+buf<<id<<dir<<x<<y;
 
 SendBroadcast(player,&buf);
 }
@@ -202,7 +202,7 @@ unsigned char code=0x89;
 unsigned char size=9;
 unsigned char type=21;
 buf<<code<<size<<type;
-buf<<<<<<<<;
+buf<<id<<dir<<x<<y;
 
 SendBroadcast(nullptr,&buf);
 }
@@ -214,7 +214,7 @@ unsigned char code=0x89;
 unsigned char size=9;
 unsigned char type=21;
 buf<<code<<size<<type;
-buf<<<<<<<<;
+buf<<id<<dir<<x<<y;
 
 SendBroadcast(player,&buf);
 }
@@ -238,7 +238,7 @@ unsigned char code=0x89;
 unsigned char size=9;
 unsigned char type=23;
 buf<<code<<size<<type;
-buf<<<<<<<<;
+buf<<id<<dir<<x<<y;
 
 SendBroadcast(nullptr,&buf);
 }
@@ -250,7 +250,7 @@ unsigned char code=0x89;
 unsigned char size=9;
 unsigned char type=23;
 buf<<code<<size<<type;
-buf<<<<<<<<;
+buf<<id<<dir<<x<<y;
 
 SendBroadcast(player,&buf);
 }
@@ -274,7 +274,7 @@ unsigned char code=0x89;
 unsigned char size=9;
 unsigned char type=25;
 buf<<code<<size<<type;
-buf<<<<<<<<;
+buf<<id<<dir<<x<<y;
 
 SendBroadcast(nullptr,&buf);
 }
@@ -286,7 +286,7 @@ unsigned char code=0x89;
 unsigned char size=9;
 unsigned char type=25;
 buf<<code<<size<<type;
-buf<<<<<<<<;
+buf<<id<<dir<<x<<y;
 
 SendBroadcast(player,&buf);
 }
@@ -310,7 +310,7 @@ unsigned char code=0x89;
 unsigned char size=9;
 unsigned char type=30;
 buf<<code<<size<<type;
-buf<<<<<<;
+buf<<atk<<tgt<<hp;
 
 SendBroadcast(nullptr,&buf);
 }
@@ -322,7 +322,7 @@ unsigned char code=0x89;
 unsigned char size=9;
 unsigned char type=30;
 buf<<code<<size<<type;
-buf<<<<<<;
+buf<<atk<<tgt<<hp;
 
 SendBroadcast(player,&buf);
 }

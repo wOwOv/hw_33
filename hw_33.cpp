@@ -10,11 +10,11 @@ void to_upper(char* p);
 
 int main()
 {
-
+	
 	printf("Text file name: ");
 	char name[128];
 	scanf_s("%s", name, 128);
-
+	
 
 
 	//////////////////////헤더파일 작성
@@ -353,7 +353,7 @@ int main()
 		fprintf(srcfile, "buf");
 		for (int c = 0; c < cnt3; c++)
 		{
-			fprintf(srcfile, "<<%s", parameter[c]);
+			fprintf(srcfile, "<<%s", val[i][c]);
 		}
 		fprintf(srcfile, ";\n\n");
 		fprintf(srcfile, "SendBroadcast(nullptr,&buf);\n}\n\n");
@@ -368,7 +368,7 @@ int main()
 		fprintf(srcfile, "buf");
 		for (int c = 0; c < cnt3; c++)
 		{
-			fprintf(srcfile, "<<%s", parameter[c]);
+			fprintf(srcfile, "<<%s", val[i][c]);
 		}
 		fprintf(srcfile, ";\n\n");
 		fprintf(srcfile, "SendBroadcast(player,&buf);\n}\n\n");
@@ -477,7 +477,7 @@ int main()
 			{
 				fprintf(stubheader, "%s;\n", param[i][f]);
 			}
-			fprintf(stubheader, "buf");
+			fprintf(stubheader, "*buf");
 			for (int e = 1; e < paramnum[i]; e++)
 			{
 				fprintf(stubheader, ">>%s", val[i][e]);
