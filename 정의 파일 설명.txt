@@ -1,0 +1,6 @@
+맨앞 숫자가
+0이면 빠짐없이 Broadcast
+1이면 Unicast
+2면 인자로 들어온 player만 빼고 Broadcast
+
+맨 뒤 숫자는 헤더에 들어가는 메시지 타입
