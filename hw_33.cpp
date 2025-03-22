@@ -483,10 +483,10 @@ int main()
 				fprintf(stubheader, ">>%s", val[i][e]);
 			}
 			fprintf(stubheader, ";\n");
-			fprintf(stubheader, "Req%sPlayer* player", func[i][0]);
+			fprintf(stubheader, "Req%splayer", func[i][0]);
 			for (int d = 1; d < paramnum[i]; d++)
 			{
-				fprintf(stubheader, ",%s", param[i][d]);
+				fprintf(stubheader, ",%s", val[i][d]);
 			}
 			fprintf(stubheader, ");\n");
 			fprintf(stubheader, "break;\n");
